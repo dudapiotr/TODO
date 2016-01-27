@@ -2,7 +2,7 @@
 ### Generowanie Entities
 
 ```php
-//Import xmla
+//Import xml
 php app/console doctrine:mapping:import --force TestBundle xml
 
 //Generowanie entity pojedynczo (z adnotacjami) - opcja filter
