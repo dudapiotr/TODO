@@ -12,3 +12,10 @@ php app/console doctrine:mapping:convert annotation ./src --filter Report
 php app/console doctrine:generate:entities TestBundle
 ```
 
+## Debugowanie
+```php
+php app/console doctrine:schema:validate
+```
+
+
+
