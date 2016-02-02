@@ -17,6 +17,7 @@ php app/console doctrine:generate:entities TestBundle
 php app/console doctrine:schema:validate
 ```
 
+## Dostep
 ```php
 $securityContext = $this->container->get('security.authorization_checker');
 if ($securityContext->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
