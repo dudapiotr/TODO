@@ -17,5 +17,12 @@ php app/console doctrine:generate:entities TestBundle
 php app/console doctrine:schema:validate
 ```
 
-
+```php
+$securityContext = $this->container->get('security.authorization_checker');
+if ($securityContext->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
+  dbs('aa');
+}else{
+  dbs('bb');
+}
+```        
 
