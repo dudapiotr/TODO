@@ -17,7 +17,9 @@ php app/console doctrine:generate:entities TestBundle
 php app/console doctrine:schema:validate
 ```
 
-## Dostep
+## AUTH I ACL
+
+### Sprawdzenie zalogowania
 ```php
 $securityContext = $this->container->get('security.authorization_checker');
 if ($securityContext->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
@@ -25,5 +27,12 @@ if ($securityContext->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
 }else{
   dbs('bb');
 }
-```        
+```     
+
+### Pobranie zalogowanego usera
+```php
+$user = $this->container->get('security.context')->getToken()->getUser();
+$user->getId();
+```
+        
 
