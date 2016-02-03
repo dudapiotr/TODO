@@ -34,5 +34,18 @@ if ($securityContext->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
 $user = $this->container->get('security.context')->getToken()->getUser();
 $user->getId();
 ```
+
+## VIEW LAYER
+### $app
+```php
+//Klasa Symfony\Bundle\FrameworkBundle\Templating\GlobalVariables
+public function getSecurity();
+public function getUser();
+public function getRequest();
+public function getSession();
+public function getEnvironment();
+public function getDebug();
+
+```
         
 
