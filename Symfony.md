@@ -1,5 +1,5 @@
 ## Doctrine 2
-### Generowanie Entities
+#### Generowanie Entities
 
 ```php
 //Import xml
@@ -10,6 +10,12 @@ php app/console doctrine:mapping:convert annotation ./src --filter Report
 
 //Generowanie getterów i setterów
 php app/console doctrine:generate:entities TestBundle
+```
+
+#### Generowanie CRUD
+```php
+php app/console generate:doctrine:crud
+php app/console generate:doctrine:crud --entity=AcmeBlogBundle:Post
 ```
 
 ## Debugowanie
