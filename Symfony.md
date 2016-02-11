@@ -6,7 +6,7 @@
 php app/console doctrine:mapping:import --force MainBundle xml
 
 //Generowanie entity pojedynczo (z adnotacjami) - opcja filter
-php app/console doctrine:mapping:convert annotation ./src --filter Report
+php app/console doctrine:mapping:convert annotation ./src --force
 
 //Generowanie getterów i setterów
 php app/console doctrine:generate:entities MainBundle
