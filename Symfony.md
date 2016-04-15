@@ -1,8 +1,9 @@
 ## Doctrine 2
 
 ### Memcached
+```php
 echo 'flush_all' | nc localhost 11211
-
+```
 #### Generowanie Entities
 
 ```php
