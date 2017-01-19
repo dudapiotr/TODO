@@ -6,7 +6,7 @@ echo 'flush_all' | nc localhost 11211
 ```
 
 #### Dump różnic sql
-``php
+```php
 php app/console doctrine:schema:update --dump-sql
 ```
 
