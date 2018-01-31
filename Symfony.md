@@ -24,11 +24,11 @@ php app/console doctrine:generate:entities MainBundle
 ```
 
 ```php
-php app/console doctrine:mapping:convert annotation ./src/MainBundle/Resources/config/doctrine/metadata/orm --from-database --force
+php bin/console doctrine:mapping:convert annotation ./src/MainBundle/Resources/config/doctrine/metadata/orm --from-database --force
 
-php app/console doctrine:mapping:import MainBundle annotation
+php bin/console doctrine:mapping:import MainBundle annotation
 
-php app/console doctrine:generate:entities MainBundle
+php bin/console doctrine:generate:entities MainBundle
 ```
 
 #### Generowanie CRUD
