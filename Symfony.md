@@ -12,6 +12,15 @@ php app/console doctrine:schema:update --dump-sql
 
 #### Generowanie Entities
 
+####Najnowsze
+
+```php
+php bin/console doctrine:mapping:convert annotation .\src\EntityGenerated --from-database
+
+```
+
+####Starsze
+
 ```php
 //Import xml
 php app/console doctrine:mapping:import --force MainBundle xml
